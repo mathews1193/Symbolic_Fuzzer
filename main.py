@@ -14,10 +14,10 @@ with ArcCoverage() as cov:
 
 
 # testing function 1
-Source(to_graph(gen_cfg(inspect.getsource(gcd)), arcs=cov.arcs()).render("Results/GCD"))
+Source(to_graph(gen_cfg(inspect.getsource(gcd)), arcs=cov.arcs()).render("CFG/GCD/GCD1"))
 
 # testing function 2
-Source(to_graph(gen_cfg(inspect.getsource(check_triangle)), arcs=cov.arcs()).render("Results/Check_Triangle"))
+Source(to_graph(gen_cfg(inspect.getsource(check_triangle)), arcs=cov.arcs()).render("CFG/Check_Triangle/Check_Triangle1"))
 
 # testing function 3 (function needs to be changed)
 #graph = to_graph(gen_cfg(inspect.getsource(function3.Hello)))
@@ -28,5 +28,5 @@ Source(to_graph(gen_cfg(inspect.getsource(check_triangle)), arcs=cov.arcs()).ren
 #Source(graph.render("Car List"))
 
 # testing function 5
-Source(to_graph(gen_cfg(inspect.getsource(quad_solver)), arcs=cov.arcs()).render("Results/Quad Solver"))
+Source(to_graph(gen_cfg(inspect.getsource(quad_solver)), arcs=cov.arcs()).render("CFG/Quad Solver/Quad Solver1"))
 
