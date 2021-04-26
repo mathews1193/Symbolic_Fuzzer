@@ -1,6 +1,5 @@
 from fuzzingbook.ConcolicFuzzer import ArcCoverage
 from fuzzingbook.ControlFlow import gen_cfg, to_graph
-from contextlib import contextmanager
 from graphviz import Source
 import inspect
 
