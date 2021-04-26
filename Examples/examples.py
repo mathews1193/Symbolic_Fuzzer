@@ -43,11 +43,11 @@ def abs_value(x: float) -> float:
     return v
 
 # function 4 calculates the sum of a list of numbers
-def calculate_sum(a, *args):
-    sum = a
+def calculate_sum(*args):
+    sum1 = 0
     for i in args:
-        sum += i
-    return sum
+        sum1 += i
+    return sum1
 
 # function 5 calculates for roots using quadratic equation
 def quad_solver(a, b, c):
@@ -66,3 +66,10 @@ def quad_solver(a, b, c):
     if i1 == 0 and i2 == 0:
         return (r1, r2)
     return ((r1, i1), (r2, i2))
+
+#function 6 rate of interest.
+def fib(n,):
+    l = [0, 1]
+    for i in range(n-2):
+        l.append(l[-1]+l[-2])
+    return l
